@@ -5,17 +5,17 @@ pipeline {
             steps {
                 // Jenkins clona el repo automáticamente con la config SCM,
                 // pero el manual incluye este paso 'git' explícitamente:
-                git 'https://github.com/AxelLuna04/mi-repo.git' [cite: 142]
+                git 'https://github.com/AxelLuna04/mi-repo.git' 
             }
         }
-        stage('Compilar') { [cite: 148]
+        stage('Compilar') {
             steps {
-                sh 'echo "Compilando el proyecto..."' [cite: 152]
+                sh 'echo "Compilando el proyecto..."' 
             }
         }
-        stage('Pruebas') { [cite: 158]
+        stage('Pruebas') {
             steps {
-                sh 'echo "Ejecutando pruebas..."' [cite: 162]
+                sh 'echo "Ejecutando pruebas..."' 
             }
         }
     }
