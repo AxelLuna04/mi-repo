@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Clonar código') { [cite: 139]
+        stage('Clonar código') {
             steps {
                 // Jenkins clona el repo automáticamente con la config SCM,
                 // pero el manual incluye este paso 'git' explícitamente:
